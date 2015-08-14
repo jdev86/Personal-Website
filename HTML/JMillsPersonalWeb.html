@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>JM Studios</title>
+		<title>Home | Justin Mills Website | Web Development | JavaScript</title>
 		
 	<meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -9,37 +9,53 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.4/jquery.min.js"></script>
     
-    <link href="../CSS/JMWebsite.css" rel="stylesheet" type="text/css">
+    <link href="JMWebsite.css" rel="stylesheet" type="text/css">
 
    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
  <!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 
 <link href="starter-template.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="theme.css">
 		
 	</head>
-	
-	
-	
+
+<style>
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+
+</style>
 	
 		
 	<body data-spy="scroll" data-target=".navbar-collapse">
 
 	
-		<div class="container">
+		<div class="container" id="home">
 
  			<div class="navbar navbar-default navbar-fixed-top">
-
+ 
  				<div class="container">
 
  					<div class="navbar-header">
 
- 		<a href="" class="navbar-brand">JM <span style="color:green;">Studios</span></a>
+ 		<a href="http://justinmorganmills.com/" class="navbar-brand">JMills</a>
 
  			<button type="button" class="navbar-toggle" data-toggle="collapse"
 			data-target=".navbar-collapse">
@@ -52,22 +68,20 @@
 
 
  			</button>
- 			
- 		</div>		
+	
+ 		</div>
 
- 		<div class="collapse navbar-collapse">
+ 		<div class="collapse navbar-collapse navbar-centered">
 
  			<ul class="nav navbar-nav">
 
-				<li class="active"><a href="#div1">Home</a></li>
+				<li class="active"><a href="#home">Home</a></li>
 
  				<li><a href="#about">About</a></li>
  				
- 				<li><a href="file://localhost/Users/justinmills/Desktop/My%20Websites/JMBlog.html">Blog</a></li>
- 				
- 				<li><a href="#div4">Projects</a></li>
+ 				<li><a href="#projects">Projects</a></li>
 
- 				<li><a href="#div5">Contact</a></li>
+ 				<li><a href="#contact">Contact</a></li>
 
  			</ul>
 
@@ -75,22 +89,41 @@
 		
  		</div>
  	</div>
+
+<div class="container" style="padding-top:70px;width:300px;height:250px;border-radius:25%;">
+
+<img class="img-responsive, center-block" style="width:400px;border-radius:45%;" src="JMillsProfilePhoto.jpg" />
+
+</div>
  	
- 	<div class="container" style="margin-top:100px;text-align:center;">
+ 	<div class="container" style="margin-top:80px;text-align:center;">
  	
  		<div class="panel-body">
  	
  	 	
  	 	
- 	 	<h3>Hi! My name is Justin Mills.</h3>
- 	 	
- 	 	Here I will try to showcase what I've learned thus far about web development tools HTML, CSS, Javascript, and various Javascript libraries and frameworks. 
+ 	 	<h2>Hi! My name is Justin Mills.</h2>
+
+              <br>
+              
+
+               <p>I am currently freelancing for web clients and am available for <strong>web projects, full-time, and part-time work</strong> in front-end development.  Please feel free to shoot me an <span><a href="mailto:justin.m.mills@outlook.com">email</a></span>!</p>
+ 	       
+              <br>
+              
+
+ 	       <p>I will be showcasing the various techniques and skills I've learned in front-end development thus far about utilizing tools and libraries that include HTML, CSS, Javascript and JavaScript frameworks.
  	 	
  	 	<h5>Notably,</h5>
  	 	
- 	 	bootstrap.js, 
- 	 	JQuery, 
+ 	 	Bootstrap.css, 
+ 	 	jQuery, 
  	 	and Angular.js!
+
+
+
+
+               
  	 	
  	 	</div>
  	 		
@@ -107,10 +140,10 @@
 			
 			
    				<div>
-     				<img src="../Images/landscape1.jpg">
+     				<img class="imgslideshow" src="landscape1.jpg">
    				</div>
    				<div>
-     				<img src="../Images/landscape2.jpg">
+     				<img class="imgslideshow"src="landscape2.jpg">
    				</div>
    				
 			</div>
@@ -124,18 +157,13 @@
 		
 	<div class="container" id="contentText" style="text-align:center;">
 		<div class="panel-body" id="about">
-		
-			<h3>Justin Mills</h3>
-			<div>
-			
-				<p>Manager of projects. Developer of web.</p>
-				
-			</div>
+
+                       <h2>About Me</h2>
 			
 			<h3>Skills</h3>
 			<div>
 			
-				<p>HTML, CSS, JS, JQuery, Bootstrap</p>
+				<p>HTML, CSS, JavaScript, jQuery, Bootstrap.css</p>
 				
 			</div>
 			
@@ -154,38 +182,62 @@
 			</div>
 		</div>		
 	</div>
+
+       	<div class="container" id="contentText" style="text-align:center;border-top:1px solid gray;margin-top:5px;">
+		<div class="panel-body" id="projects">
+		
+			<h2>Projects</h2>
+
+                        <h3>The Architecture Collective</h3>
+
+			<div>
+			
+				<p><a href="http://www.arcollective.com">www.arcollective.com</a></p>
+				
+			</div>
+
+                        <div>
+
+                                <img class="imgproject,  center-block" src="arcollective.png" />
+
+                        </div>
+			
+		</div>		
+	</div>
+
+       <div class="container">
+
+              <div>
+
+             </div>
+
+      </div>
 	
 	
 	
-		<div class="container">
+		<div class="container, navbar-centered">
         <div id="navbar-footer" class="wrap text-center">
-          <ul class="nav navbar-nav social center-text">
-            <li class="active"><a href="#">Home</a></li>
+          <ul class="nav navbar-nav social center-text" id="contact">
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="file://localhost/Users/justinmills/Desktop/My%20Websites/JMBlog.html">Blog</a></li>
+            <li><a href="JustinMMillsResume.pdf">Resume</a></li>
+            <li></li>
+            <li class="hidden"><a href="file://localhost/Users/justinmills/Desktop/My%20Websites/JMBlog.html">Blog</a></li>
+            <li><a href="mailto:justin.m.mills@outlook.com"><i class="fa fa-envelope"></i></a></li>
             <li><a href="https://www.linkedin.com/in/justinmmills"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.github.com/jdev86"><i class="fa fa-github"></i></a></li>
             
           </ul>
           
-          
-          
-        </div><!--/.nav-collapse -->
+        </div>
         
         <div id="signature">
 				
-			<img style="width:30px; height:30px;" src="../Images/jm-icon.jpg"/>
+			<img style="width:30px; height:30px;" src="jm-icon.jpg"/>
 				
 		</div>
     
 	</div>
-			
-				
-				
-
-	
 		
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -206,7 +258,8 @@ as needed -->
     				.end()
     				.appendTo('#slideshow');
 				},  6000);
-		
+
+
 			</script>
 			
 		
